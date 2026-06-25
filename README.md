@@ -1,6 +1,6 @@
 # 🕵️ AI-Based Deepfake Face Detector
 
-
+![Image Description](UI%20Images/Project_Banner.png)
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![NumPy](https://img.shields.io/badge/NumPy-Scientific%20Computing-013243?logo=numpy&logoColor=white)
@@ -38,19 +38,19 @@ The system processes facial images, extracts meaningful features using deep lear
 
 ---
 
-## 🖼️ Demo
+## 🖼️ Interface 
 
-![Image Description](path/to/image.png)
+![Image Description](UI%20Images/Home_img.png)
 
 *Figure 1: Home page of the Deepfake Face Detector application.*
 
-![Image Description](path/to/image.png)
+![Image Description](UI%20Images/About_img.png)
 
 *Figure 2: About page of the Deepfake Face Detector application.*
 
-![Image Description](path/to/image.png)
+![Image Description](UI%20Images/How_it_works_img.png)
 
-*Figure 1: How it works page of the Deepfake Face Detector application.*
+*Figure 3: How it works page of the Deepfake Face Detector application.*
 
 ---
 
@@ -88,15 +88,9 @@ dataset/
 
 **Model Used:** Vision Transformer (ViT)
 
-### Workflow
+![Image Description](UI%20Images/Project_Workflow.png)
 
-1. Data Collection & Preparation
-2. Image Preprocessing and Normalization
-3. Feature Extraction using Vision Transformer
-4. Model Training and Validation
-5. Deepfake Classification (Real vs Fake)
-6. Performance Evaluation
-7. Deployment with Streamlit
+*Figure 4: Project Workflow for the Deepfake Face Detector Application.*
 
 ---
 
