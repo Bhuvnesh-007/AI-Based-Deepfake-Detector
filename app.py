@@ -58,7 +58,6 @@ def go_to(page_name: str):
 # Custom navbar (rendered with real Streamlit buttons laid out via columns,
 # styled via CSS to look like the navbar in the mockups)
 # -----------------------------------------------------------------
-
 def render_navbar(active: str):
     nav_html_open = """
     <div class="navbar">
@@ -77,22 +76,22 @@ def render_navbar(active: str):
 
     cols = st.columns([5, 1, 1.3, 1, 1.6])
     with cols[1]:
-        if st.button("Home", width='stretch',
+        if st.button("Home", use_container_width=True,
                       type="primary" if active == "home" else "secondary"):
             go_to("home")
             st.rerun()
     with cols[2]:
-        if st.button("How It Works", width='stretch',
+        if st.button("How It Works", use_container_width=True,
                       type="primary" if active == "how" else "secondary"):
             go_to("how")
             st.rerun()
     with cols[3]:
-        if st.button("About", width='stretch',
+        if st.button("About", use_container_width=True,
                       type="primary" if active == "about" else "secondary"):
             go_to("about")
             st.rerun()
     with cols[4]:
-        if st.button("+ New Analysis", width='stretch', type="primary"):
+        if st.button("+ New Analysis", use_container_width=True, type="primary"):
             st.session_state.result = None
             go_to("home")
             st.rerun()
@@ -140,7 +139,7 @@ def render_confidence_donut(confidence: float, label: str):
             ),
         ],
     )
-    st.plotly_chart(fig, width='stretch', config={"displayModeBar": False})
+    st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
 
 
 # -----------------------------------------------------------------
@@ -186,9 +185,9 @@ def render_home():
 
             if uploaded_file is not None:
                 image = Image.open(uploaded_file)
-                st.image(image, caption="Uploaded image", width='stretch')
+                st.image(image, caption="Uploaded image", use_container_width=True)
 
-                analyze_clicked = st.button("🔍 Analyze Image", width='stretch', type="primary")
+                analyze_clicked = st.button("🔍 Analyze Image", use_container_width=True, type="primary")
                 if analyze_clicked:
                     with st.spinner("Running deepfake analysis..."):
                         result = predict(st.session_state.model, image)
