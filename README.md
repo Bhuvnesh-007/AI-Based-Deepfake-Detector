@@ -7,6 +7,7 @@
 ![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas&logoColor=white)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-Data%20Visualization-11557C)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-Deep%20Learning-orange)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
 ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Deepfake%20Detection-red)
 ![Deep Learning](https://img.shields.io/badge/Deep%20Learning-Neural%20Networks-orange)
 ![Streamlit](https://img.shields.io/badge/Streamlit-Web%20App-FF4B4B?logo=streamlit&logoColor=white)
